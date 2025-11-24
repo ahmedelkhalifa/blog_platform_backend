@@ -14,7 +14,7 @@ import java.util.Set;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface TagMapper {
 
-    @Mapping(target = "postsCount", source = "posts", qualifiedByName = "calculatePostsCount")
+    @Mapping(target = "postCount", source = "posts", qualifiedByName = "calculatePostsCount")
     TagResponse toTagResponse(Tag tag);
 
     @Named("calculatePostsCount")

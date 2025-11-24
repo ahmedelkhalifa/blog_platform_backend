@@ -1,6 +1,8 @@
 package com.learn.blog.domain.dtos;
 
 import com.learn.blog.domain.PostStatus;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,5 +26,5 @@ public class PostDto {
     private Integer readingTime;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-    private PostStatus postStatus;
+    private PostStatus status;
 }

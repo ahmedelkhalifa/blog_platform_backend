@@ -14,5 +14,5 @@ import java.util.UUID;
 public class TagResponse {
     private UUID id;
     private String name;
-    private Integer postsCount;
+    private Integer postCount;
 }

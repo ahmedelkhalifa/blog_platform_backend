@@ -15,7 +15,7 @@ import java.util.List;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface CategoryMapper {
 
-    @Mapping(target = "postsCount", source = "posts", qualifiedByName = "calculatePostsCount")
+    @Mapping(target = "postCount", source = "posts", qualifiedByName = "calculatePostsCount")
     CategoryDto toDto(Category category);
 
     Category toEntity(CreateCategoryRequest createCategoryRequest);
